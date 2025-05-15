@@ -20,7 +20,7 @@ pipeline {
             steps {
                 checkout scm
                 // Replace 'github-cred' with your actual Jenkins credentials ID
-                git credentialsId: 'github-cred', url: "${REPO_URL}"
+                git branch: 'main', credentialsId: 'github-cred', url: "${REPO_URL}"
             }
         }
         
