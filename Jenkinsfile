@@ -7,8 +7,8 @@ pipeline {
         DOCKER_IMAGE = 'ashokreddy1613/java-app'  // Docker image with Java
         DOCKERHUB_CREDENTIALS = credentials('dockerhub-cred') // Your DockerHub credentials
     
-        SONARQUBE_SERVER = 'sonar-qube'       // Name of your Jenkins SonarQube server config
-        SONAR_SCANNER = tool 'SonarScanner'        // Jenkins tool name for SonarScanner CLI
+        SONARQUBE_SERVER = 'SonarScanner'       // Name of your Jenkins SonarQube server config
+        SONAR_SCANNER = tool 'sonar-qube'        // Jenkins tool name for SonarScanner CLI
         SONAR_TOKEN = credentials('sonar-token')  // Jenkins stored secret token for SonarQube auth
         
         // Application configuration
